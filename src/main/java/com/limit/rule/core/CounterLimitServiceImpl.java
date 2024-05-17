@@ -2,6 +2,7 @@ package com.limit.rule.core;
 
 
 import com.limit.rule.annotation.LimitRule;
+import com.limit.rule.exception.LimitException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
