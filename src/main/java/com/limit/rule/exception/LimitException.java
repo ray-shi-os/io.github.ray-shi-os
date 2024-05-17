@@ -1,6 +1,5 @@
 package com.limit.rule.exception;
 
-import com.limit.rule.enums.ResultEnum;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -14,8 +13,9 @@ public class LimitException extends RuntimeException {
 
     private String message;
 
-    public LimitException() {
-        this.message = ResultEnum.LIMIT_ERROR.getMessage();
-        this.code = ResultEnum.LIMIT_ERROR.getCode();
+    public LimitException(String message) {
+        super();
+        this.message =message;
+
     }
 }
